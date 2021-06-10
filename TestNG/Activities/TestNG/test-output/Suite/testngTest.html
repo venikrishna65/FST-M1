@@ -1,0 +1,259 @@
+<html>
+<head>
+<title>TestNG:  testngTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>testngTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/1</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 20 21:24:25 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52061 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGTests.Activity2.test2()'><b>test2</b><br>Test class: testNGTests.Activity2</td>
+<td><div><pre>java.lang.AssertionError: expected [black] but found [Black]
+	at testNGTests.Activity2.test2(Activity2.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace965805108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace965805108'><pre>java.lang.AssertionError: expected [black] but found [Black]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at testNGTests.Activity2.test2(Activity2.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>testNGTests.Activity2@32ee6fee</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGTests.Activity2.test1()'><b>test1</b><br>Test class: testNGTests.Activity2</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity2@32ee6fee</td></tr>
+<tr>
+<td title='testNGTests.Activity9.simpleAlertTestCase()'><b>simpleAlertTestCase</b><br>Test class: testNGTests.Activity9<br/>
+<a href="#Output-28894233" onClick='toggleBox("Output-28894233", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28894233" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28894233">
+simpleAlertTestCase() started |<br/>
+Simple Alert opened |<br/>
+Switched foucs to alert |<br/>
+Alert text is: This is a JavaScript Alert! |<br/>
+Alert closed<br/>
+Test case ended |<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>testNGTests.Activity9@7fee8714</td></tr>
+<tr>
+<td title='testNGTests.Activity9.promptAlertTestCase()'><b>promptAlertTestCase</b><br>Test class: testNGTests.Activity9<br/>
+<a href="#Output-862848367" onClick='toggleBox("Output-862848367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-862848367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-862848367">
+promptAlertTestCase() started |<br/>
+Prompt Alert opened |<br/>
+Switched foucs to alert |<br/>
+Alert text is: This is a JavaScript Prompt! |<br/>
+Text entered in prompt alert |<br/>
+Alert closed |<br/>
+Test case ended |<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity9@7fee8714</td></tr>
+<tr>
+<td title='testNGTests.Activity6.loginTestCase()'><b>loginTestCase</b><br>Test class: testNGTests.Activity6<br>Parameters: admin, password</td>
+<td></td>
+<td>1</td>
+<td>testNGTests.Activity6@f736069</td></tr>
+<tr>
+<td title='testNGTests.Activity5.ButtonTest2()'><b>ButtonTest2</b><br>Test class: testNGTests.Activity5</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity5@28f2a10f</td></tr>
+<tr>
+<td title='testNGTests.Activity7.loginTestCase()'><b>loginTestCase</b><br>Test class: testNGTests.Activity7<br>Parameters: admin, password</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity7@6da21078</td></tr>
+<tr>
+<td title='testNGTests.Activity5.pageTitleTest()'><b>pageTitleTest</b><br>Test class: testNGTests.Activity5</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity5@28f2a10f</td></tr>
+<tr>
+<td title='testNGTests.Activity5.HeaderTest2()'><b>HeaderTest2</b><br>Test class: testNGTests.Activity5</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity5@28f2a10f</td></tr>
+<tr>
+<td title='testNGTests.Activity3.LoginTest()'><b>LoginTest</b><br>Test class: testNGTests.Activity3</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity3@4d0f2471</td></tr>
+<tr>
+<td title='testNGTests.Activity1.getPageTitle()'><b>getPageTitle</b><br>Test class: testNGTests.Activity1</td>
+<td></td>
+<td>3</td>
+<td>testNGTests.Activity1@48974e45</td></tr>
+<tr>
+<td title='testNGTests.Activity5.HeaderTest1()'><b>HeaderTest1</b><br>Test class: testNGTests.Activity5</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity5@28f2a10f</td></tr>
+<tr>
+<td title='testNGTests.Activity5.ButtonTest1()'><b>ButtonTest1</b><br>Test class: testNGTests.Activity5</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity5@28f2a10f</td></tr>
+<tr>
+<td title='testNGTests.Activity9.confirmAlertTestCase()'><b>confirmAlertTestCase</b><br>Test class: testNGTests.Activity9<br/>
+<a href="#Output-2014572815" onClick='toggleBox("Output-2014572815", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2014572815" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2014572815">
+confirmAlertTestCase() started |<br/>
+Confirm Alert opened |<br/>
+Switched foucs to alert |<br/>
+Alert text is: This is a JavaScript Confirmation! |<br/>
+Alert closed |<br/>
+Test case ended |<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGTests.Activity9@7fee8714</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGTests.Activity2.test4()'><b>test4</b><br>Test class: testNGTests.Activity2</td>
+<td><div><pre>org.testng.SkipException: Skipping test case
+	at testNGTests.Activity2.test4(Activity2.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace275619593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace275619593'><pre>org.testng.SkipException: Skipping test case
+	at testNGTests.Activity2.test4(Activity2.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>testNGTests.Activity2@32ee6fee</td></tr>
+</table><p>
+</body>
+</html>
